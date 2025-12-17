@@ -1,7 +1,7 @@
 
 // Import Node.js File System module
 const fs = require('fs');
-
+const os = require('os');
 
 // =====================
 // WRITE FILE (SYNC)
@@ -55,10 +55,10 @@ const fs = require('fs');
 // Adds content at the END of the file
 // Date.now() adds current timestamp
 // '\n' moves content to a new line
-fs.appendFileSync(
-    "./hello-world/test.txt",
-    `${Date.now()} hello tushal\n`
-);
+// fs.appendFileSync(
+//     "./hello-world/test.txt",
+//     `${Date.now()} hello tushal\n`
+// );
 
 
 // =====================
@@ -83,9 +83,9 @@ fs.appendFileSync(
 
 // Gets file details (stats object)
 // isFile() returns true if path is a file
-console.log(
-    fs.statSync("./hello-world/test.txt").isFile()
-);
+// console.log(
+//     fs.statSync("./hello-world/test.txt").isFile()
+// );
 
 
 // =====================
@@ -95,4 +95,6 @@ console.log(
 // Creates nested folders
 // { recursive: true } creates parent folders automatically
 // my-docs → a → b → c
-fs.mkdirSync("my-docs/a/b/c", { recursive: true });
+// fs.mkdirSync("my-docs/a/b/c", { recursive: true });
+
+console.log(os.cpus().length);
