@@ -13,10 +13,9 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "hello.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./hello-world/hello.js",
-    "file": "node ./hello-world/file.js"
+    "start": "node ./01_basics/index.js"
+
   }
 }
