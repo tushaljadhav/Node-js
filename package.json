@@ -18,7 +18,6 @@
     "start": "node ./02_basics/index.js"
   },
   "dependencies": {
-    "url": "^0.11.4"
-  },
-  "devDependencies": {}
+    "express": "^5.2.1"
+  }
 }
